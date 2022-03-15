@@ -27,8 +27,8 @@ public interface MethodInvoker {
      *     String bar(String string);
      *     void baz(String string);
      * }
-     * MethodInvoker bar = (target, args) -> ((Foo)target).bar((String)args[0]);
-     * MethodInvoker baz = (target, args) -> {((Foo)target).baz((String)args[0]); return null;};
+     * MethodInvoker bar = (target, args) -&gt; ((Foo)target).bar((String)args[0]);
+     * MethodInvoker baz = (target, args) -&gt; {((Foo)target).baz((String)args[0]); return null;};
      * </pre>
      *
      * @param target the object the underlying method is invoked from.

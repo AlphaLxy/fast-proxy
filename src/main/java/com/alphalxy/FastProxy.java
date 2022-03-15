@@ -133,7 +133,7 @@ public class FastProxy {
      */
     private static final String GET_METHOD_DESCRIPTOR = getGetMethodDescriptor();
     /**
-     * Descriptor of bootstrap method <code>() -> MethodInvoker</code>.
+     * Descriptor of bootstrap method <code>() -&gt; MethodInvoker</code>.
      */
     private static final String BOOTSTRAP_DESCRIPTOR = "()" + Type.getDescriptor(MethodInvoker.class);
     /**
@@ -309,7 +309,7 @@ public class FastProxy {
      * <pre>
      * public final ${returnType} ${methodName}(arg0, arg1, args2, ...) {
      *     return? this.interceptor.intercept(this, ${method},
-     *         (obj, args) -> obj.${methodName}(args[0], args[1], args[2], ...),
+     *         (obj, args) -&gt; obj.${methodName}(args[0], args[1], args[2], ...),
      *         new Object[]{arg0, arg1, args2, ...}
      *     );
      * }

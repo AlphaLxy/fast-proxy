@@ -1,5 +1,13 @@
-# Fast-Proxy
-Alternatives to `java.lang.Proxy` and more efficient.
+# FastProxy
+Alternatives to `java.lang.Proxy`.
+
+```xml
+<dependency>
+  <groupId>com.alphalxy</groupId>
+  <artifactId>fast-proxy</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
 
 ```java
 import com.alphalxy.FastProxy;

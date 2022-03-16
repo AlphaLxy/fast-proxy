@@ -9,7 +9,7 @@
     <version>0.0.1</version>
 
     <name>fast-proxy</name>
-    <description>Alternatives to java.lang.Proxy</description>
+    <description>FastProxy is a library to create dynamic proxy class.</description>
 
     <licenses>
         <license>

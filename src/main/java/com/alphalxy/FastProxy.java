@@ -97,7 +97,7 @@ public class FastProxy {
      *
      * @param object the object to test.
      * @return {@code true} if the object is a proxy instance and {@code false} otherwise.
-     * @throws NullPointerException if {@code cl} is {@code null}.
+     * @throws NullPointerException if {@code object} is {@code null}.
      */
     public static boolean isProxyInstance(Object object) {
         return PROXY_CONSTRUCTORS.containsKey(Objects.requireNonNull(object).getClass());

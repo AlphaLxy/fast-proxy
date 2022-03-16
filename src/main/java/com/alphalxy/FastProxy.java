@@ -97,7 +97,7 @@ public class FastProxy {
      *
      * @param object the object to test.
      * @return {@code true} if the object is a proxy instance and {@code false} otherwise.
-     * @throws NullPointerException if {@code cl} is {@code null}.
+     * @throws NullPointerException if {@code object} is {@code null}.
      */
     public static boolean isProxyInstance(Object object) {
         return PROXY_CONSTRUCTORS.containsKey(Objects.requireNonNull(object).getClass());
@@ -117,7 +117,7 @@ public class FastProxy {
     private static final Map<Class<?>, Constructor<?>> PROXY_CONSTRUCTORS = new ConcurrentHashMap<>();
 
     /**
-     * Bootstrap method handler {@link java.lang.invoke.LambdaMetafactory#metafactory}.
+     * Bootstrap method handler {@link LambdaMetafactory#metafactory}.
      */
     private static final Handle BOOTSTRAP_METHOD_HANDLE = getBootstrapMethodHandle();
     /**
@@ -469,7 +469,7 @@ public class FastProxy {
     }
 
     /**
-     * Bootstrap method handler {@link java.lang.invoke.LambdaMetafactory#metafactory}.
+     * Bootstrap method handler {@link LambdaMetafactory#metafactory}.
      */
     private static Handle getBootstrapMethodHandle() {
         String name = "metafactory";
